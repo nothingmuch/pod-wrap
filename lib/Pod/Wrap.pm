@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: Wrap.pm,v 1.3 2004/01/08 03:20:16 nothingmuch Exp $
+# $Id: Wrap.pm,v 1.4 2004/01/13 16:30:58 nothingmuch Exp $
 
 package Pod::Wrap;
 
@@ -9,7 +9,7 @@ use warnings;
 use Text::Wrap;
 use base 'Pod::Parser';
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 sub begin_input {
 	my $self = shift;
