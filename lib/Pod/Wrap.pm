@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: Wrap.pm,v 1.2 2004/01/08 01:52:21 nothingmuch Exp $
+# $Id: Wrap.pm,v 1.3 2004/01/08 03:20:16 nothingmuch Exp $
 
 package Pod::Wrap;
 
@@ -60,16 +60,15 @@ Pod::Wrap - Wrap pod paragraphs, leaving verbatim text and code alone.
 
 =head1 SYNOPSIS
 
-	
 	#!/usr/bin/perl
-	
+
 	use strict;
 	use warnings;
-	
+
 	use Pod::Wrap;
-	
+
 	my $w = new Pod::Wrap;
-	
+
 	unless (@ARGV) {
 		$w->parse_from_filehandle() # STDIN
 	} else {
@@ -108,7 +107,7 @@ I prefer editing with tabs and soft wrapping.
 
 Most people like getting documentation hard wrapped and with tabs expanded.
 
-The tabs are easy (L<expand(1)>), but wrapping only the correct parts of the pod is a little tricker. This module attempts to do this correctly, by wrapping only what isn't a command, a verbatim example (indented text), or actual Perl code.
+The tabs are easy (L<Text::Tabs>), but wrapping only the correct parts of the pod is a little tricker. This module attempts to do this correctly, by wrapping only what isn't a command, a verbatim example (indented text), or actual Perl code.
 
 PodMaster noted that I should see what perltidy has to offer. Turns out that
 
@@ -157,6 +156,6 @@ Yuval Kogman <nothingmuch@woobling.org>
 
 =head1 SEE ALSO
 
-L<Text::Wrap>, L<Pod::Parser>, L<Pod::Stripper>, L<http://perltidy.sourceforge.net> & L<Perl::Tidy>
+L<Text::Wrap>, L<Pod::Parser>, L<Pod::Stripper>, L<Perl::Tidy>
 
 =cut
