@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: Wrap.pm,v 1.1 2004/01/08 01:41:20 nothingmuch Exp $
+# $Id: Wrap.pm,v 1.2 2004/01/08 01:52:21 nothingmuch Exp $
 
 package Pod::Wrap;
 
@@ -14,7 +14,7 @@ our $VERSION = 0.01;
 sub begin_input {
 	my $self = shift;
 	
-	$self->SUPER::parseopts(	# we need some special options:
+	$self->parseopts(			# we need some special options:
 		'-want_nonPODs' => 1,		# want the perl code
 		'-process_cut_cmd' => 9,	# want to preserve cuts so pod is properly terminated
 	);
@@ -122,7 +122,7 @@ This drove me to release this tiny module.
 
 The wrapping behavior is defined entirely by L<Text::Wrap>.
 
-No re-exporting is made, in order to minimise bugs. If you want to import the variables L<Text::Wrap> uses, do something like this:
+No re-exporting is made, in order to minimize bugs. If you want to import the variables L<Text::Wrap> uses, do something like this:
 
 	use Pod::Wrap;
 	use Text::Wrap qw/$columns $huge/;
@@ -139,7 +139,7 @@ You can ask me.
 
 Podmaster wrote L<Pod::Stripper>. Even though the functionality of this module is very limited, and is not really derived from L<Pod::Stripper>, I would have been too lazy to read L<Pod::Parser>'s docs without seeing L<Pod::Stripper>'s code as an example first.
 
-Bottom line, most of the work (the research) that was actually done is not mine. Implementation wouldn't have happenned if I hadn't known for sure it's possible to get perl code, verbatim, out of a pod parser. And I wouldn't have if I hadn't seen a working example.
+Bottom line, most of the work (the research) that was actually done is not mine. Implementation wouldn't have happened if I hadn't known for sure it's possible to get perl code, verbatim, out of a pod parser. And I wouldn't have if I hadn't seen a working example.
 
 =head1 COPYRIGHT & LICENSE
 
