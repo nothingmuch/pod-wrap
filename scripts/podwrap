@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: podwrap,v 1.1 2004/01/08 01:41:37 nothingmuch Exp $
+# $Id: podwrap,v 1.2 2004/01/08 03:21:02 nothingmuch Exp $
 
 use strict;
 use warnings;
@@ -40,7 +40,7 @@ __END__
 	podwrap [ infile [ outfile ] ]
 	podwrap [ --in infile ] [ --out outfile ]
 	podwrap < infile > outfile
-	
+
 =head1 OPTIONS
 
 =over 4
