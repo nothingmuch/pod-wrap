@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: Build.PL,v 1.1 2004/01/08 01:41:03 nothingmuch Exp $
+# $Id: Build.PL,v 1.2 2004/01/08 03:16:12 nothingmuch Exp $
 
 use strict;
 use warnings;
@@ -18,5 +18,4 @@ Module::Build->new(
 	},
 	script_files => [ 'scripts/podwrap' ],
 	create_makefile_pl => "traditional",
-	sign => 1,
 )->create_build_script;
